@@ -5,10 +5,6 @@ function PizzaOrder(size) {
   this.special = [];
 }
 
-PizzaOrder.prototype.protein = function(protein) {
-  this.protein.push(protein);
-}
-
 PizzaOrder.prototype.price = function () {
   return this.size + (this.protein.length * 2) + (this.veg.length * 1) + (this.special.length * 3);
 }
@@ -16,6 +12,10 @@ PizzaOrder.prototype.price = function () {
 
 
 $(document).ready(function() {
+  $("#addProtein").click (function() {
+    $("#protein2").show();
+  });
+
   $("form#newPizza").submit(function(event) {
     event.preventDefault();
 
