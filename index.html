@@ -16,53 +16,60 @@
       </div>
     </div>
 <!-- End jumbotron -->
+    <form id=newPizza method="post">
 <!-- size -->
-    <div class="container">
-      <h3>Pick a Size.</h3>
-      <div class="radio" id="size">
-        <label>
-          <input type="radio" name="pizzaSize" value=10 checked>
-          <img src="#" alt="" id=picmed/>
-        </label>
-        <label>
-          <input type="radio" name="pizzaSize" value=15>
-          <img src="#" alt="" id=piclarge/>
-        </label>
+      <div class="container">
+        <h3>Pick a Size.</h3>
+        <div class="radio" id="size">
+          <label>
+            <input type="radio" name="pizzaSize" value=10 unchecked>
+            <img src="#" alt="" id=picmed/>
+          </label>
+          <label>
+            <input type="radio" name="pizzaSize" value=15>
+            <img src="#" alt="" id=piclarge/>
+          </label>
+        </div>
       </div>
-    </div>
 <!-- end size -->
 <!-- toppings     -->
-    <div class="container">
-      <div class="row">
-        <h3>Chose Your Toppings.</h3>
+      <div class="container">
+        <div class="row">
+          <h3>Chose Your Toppings.</h3>
 
-        <div class="col-md-6">
-          <h4>Choose a protein</h4>
-          <select class="form-control" class="protein">
-           <option>1</option>
-           <option>2</option>
-           <option>3</option>
-           <option>4</option>
-          </select>
-        </div>
+            <div class="col-md-6">
+              <h4>Choose a protein</h4>
+              <select class="form-control" id="protein">
+                <option hidden>Choose a Protein</option>
+               <option>Ham</option>
+               <option>Bacon</option>
+               <option>Smoked Tofu</option>
+              </select>
+            </div>
 
-        <div class="col-md-6">
-          <h4>Choose a veggie</h4>
-          <select class="form-control" id="veg">
-           <option>1</option>
-           <option>2</option>
-          </select>
+            <div class="col-md-6">
+              <h4>Choose a veggie</h4>
+              <select class="form-control" id="veg">
+               <option hidden>Choose a veggie</option>
+               <option>Peppers</option>
+               <option>Fresh Tomato</option>
+               <option>Pineapple</option>
+              </select>
 
-          <h4>Any Special Toppings?</h4>
-          <select class="form-control" id="special">
-           <option>1</option>
-           <option>2</option>
-          </select>
+              <h4>Any Special Toppings?</h4>
+              <select class="form-control" id="special">
+               <option hidden>Choose a Special Topping</option>
+               <option>Arugula</option>
+               <option>Artichoke Hearts</option>
+               <option>Sun-dried Tomatoes</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
 
         </div>
       </div>
-    </div>
 <!-- end toppings -->
+    </form>
 
     <h4>Your total: <span id="total">$</span></h4>
   </body>
