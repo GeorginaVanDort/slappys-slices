@@ -10,7 +10,7 @@ PizzaOrder.prototype.protein = function(protein) {
 }
 
 PizzaOrder.prototype.price = function () {
-  return this.size + (this.protein.length * 2);
+  return this.size + (this.protein.length * 2) + (this.veg.length * 1) + (this.special.length * 3);
 }
 
 
@@ -25,9 +25,16 @@ $(document).ready(function() {
     var special = $("#special").val();
 
     var newPizza = new PizzaOrder(size);
-    newPizza.protein.push(protein);
-    newPizza.veg.push(veg);
-    newPizza.special.push(special);
+
+    if (protein !== "None") {
+      newPizza.protein.push(protein);
+    }
+    if (veg !== "None") {
+      newPizza.veg.push(veg);
+    }
+    if (special !== "None") {
+      newPizza.special.push(special);
+    }
 
     $("#total").text(newPizza.price());
 
