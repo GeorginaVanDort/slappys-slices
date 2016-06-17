@@ -16,15 +16,16 @@ http://georginavandort.github.io/slappys-slices
 
 2. User can choose a protein topping. Value will be taken by the webpage.
 
-3. Values will be stored in an object and can be accessed through the console.
+3. Values will be stored in an object.
 
 4. A prototype will be used to calculate a total pizza price.
 
 6. User can choose other toppings. Values will be stored as the user makes selections.
 
-5. A running total for the pizza price will be visible as the user makes selections.
+5. User can choose additional toppings through a "add extra" button click. Values will be stored as the user makes selections.
 
-6. User can choose additional toppings through a "add extra" button click. Values will be stored as the user makes selections.
+6. A running total for the pizza price will be visible as the user makes selections.
+
 
 
 ## Setup

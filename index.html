@@ -21,13 +21,13 @@
       <div class="container">
         <h3>Pick a Size.</h3>
         <div class="radio" id="size">
-          <label>
-            <input type="radio" name="pizzaSize" value=10 unchecked>
-            <img src="#" alt="" id=picmed/>
+          <label> Medium $10
+            <img src="img/medium.png" alt="" id=picmed/>
+            <input type="radio" name="pizzaSize" value=10 checked>
           </label>
-          <label>
+          <label> Large $15
+            <img src="img/large.png" alt="" id=piclarge/>
             <input type="radio" name="pizzaSize" value=15>
-            <img src="#" alt="" id=piclarge/>
           </label>
         </div>
       </div>
@@ -70,7 +70,8 @@
       </div>
 <!-- end toppings -->
     </form>
-
-    <h4>Your total: $<span id="total"></span></h4>
+    <div class="container">
+      <h4>Your total: $<span id="total"></span></h4>
+    </div>
   </body>
 </html>
