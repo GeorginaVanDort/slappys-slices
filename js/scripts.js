@@ -20,14 +20,19 @@ $(document).ready(function() {
     event.preventDefault();
 
     var size = parseInt($('#size input:radio:checked').val());
-    var protein = $("#protein1").val();
+
+    var protein1 = $("#protein1").val();
+    var protein2 = $("#protein2").val();
     var veg = $("#veg").val();
     var special = $("#special").val();
 
     var newPizza = new PizzaOrder(size);
 
-    if (protein !== "None") {
-      newPizza.protein.push(protein);
+    if (protein1 !== "None") {
+      newPizza.protein.push(protein1);
+    }
+    if (protein2 !== "None") {
+      newPizza.protein.push(protein2);
     }
     if (veg !== "None") {
       newPizza.veg.push(veg);
