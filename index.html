@@ -19,8 +19,16 @@
 <!-- size -->
     <div class="container">
       <h3>Pick a Size.</h3>
-      <img src="#" alt="" id=picmed/>
-      <img src="#" alt="" id=piclarge/>
+      <div class="radio" id="size">
+        <label>
+          <input type="radio" name="pizzaSize" value=10 checked>
+          <img src="#" alt="" id=picmed/>
+        </label>
+        <label>
+          <input type="radio" name="pizzaSize" value=15>
+          <img src="#" alt="" id=piclarge/>
+        </label>
+      </div>
     </div>
 <!-- end size -->
 <!-- toppings     -->
@@ -29,16 +37,18 @@
         <h3>Chose Your Toppings.</h3>
 
         <div class="col-md-6">
-          <h4>Choose a protien</h4>
-          <select class="form-control" id="protien">
+          <h4>Choose a protein</h4>
+          <select class="form-control" class="protein">
            <option>1</option>
            <option>2</option>
+           <option>3</option>
+           <option>4</option>
           </select>
         </div>
 
         <div class="col-md-6">
           <h4>Choose a veggie</h4>
-          <select class="form-control" id="veggie">
+          <select class="form-control" id="veg">
            <option>1</option>
            <option>2</option>
           </select>
