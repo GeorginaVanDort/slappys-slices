@@ -3,6 +3,7 @@ function PizzaOrder(size) {
   this.protein = [];
   this.veg = [];
   this.special = [];
+  this.totalPrice = 0;
 }
 
 PizzaOrder.prototype.price = function () {
